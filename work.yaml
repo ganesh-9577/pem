@@ -1,0 +1,7 @@
+- hosts: all
+  user: ganesh
+  become: yes
+
+  tasks:
+    - name: run docker tomcat container
+      command: docker run -itdp 8082:8080 -v /mnt/wars:/usr/local/tomcat/webapps --name tomcat-server tomcat:9.0
