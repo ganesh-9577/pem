@@ -1,4 +1,4 @@
-- hosts: all
+- hosts: qa
   user: ganesh
   become: yes
 
